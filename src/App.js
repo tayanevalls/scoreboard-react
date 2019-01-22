@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import './index.css';
-import PlacarContainer from './PlacarContainer';
+import Scoreboard from './Scoreboard';
 
 
 const dados = {
-  partida: {
-      estadio: "Arena Corinthians",
-      data: "22/01/2019",
-      horario: "19hrs",
-      clima: "Nublado",
-      campeonato: "Brasileiro",
+    match: {
+      stadium: "Arena Corinthians",
+      date: "22/01/2019",
+      schedule: "19hrs",
+      weather: "Nublado",
+      championship: "Brasileiro",
   },
 
-  casa:{
-      nome: "Corinthians",
+  home:{
+      name: "Corinthians",
   },
 
-  visitante: {
-      nome: "Santos",
+  visitor: {
+      name: "Santos",
   }
 };
 
 class App extends Component {
   render(){
-      return <PlacarContainer {...dados} />
+      return <Scoreboard {...dados} />
 
       
   }

@@ -10,6 +10,7 @@ export default class BotaoGol extends React.Component{
         this.props.marcarGol();
     }
 
+
     render(){
         return(
             <Button color="link" href="#" onClick={this.handleClick.bind(this)}>

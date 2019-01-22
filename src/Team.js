@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Container, Col, Row, Badge } from 'reactstrap';
 
-import BotaoGol from './BotaoGol';
+import Button from './Button';
 
-export default class Time extends React.Component{
+export default class Team extends React.Component{
 
     render(){
         return(
@@ -12,7 +12,7 @@ export default class Time extends React.Component{
             <Container>
                 <Row>
                     <Col md={12}>
-                    <h1>{this.props.nome}</h1>
+                    <h1>{this.props.name}</h1>
                     </Col>
                 </Row>
                 <Row>
@@ -23,7 +23,7 @@ export default class Time extends React.Component{
                 
                 <Row>
                     <Col md={12}>
-                        <BotaoGol marcarGol={this.props.marcarGol}/>
+                        <Button marcarGol={this.props.marcarGol}/>
                     </Col>
                 </Row> 
             </Container>
